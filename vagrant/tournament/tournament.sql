@@ -11,16 +11,14 @@ DROP DATABASE IF EXISTS tournament;
 
 CREATE DATABASE tournament;
 
- \c tournament;
+\c tournament;
 
 
-DROP TABLE IF EXISTS players CASCADE;
 
 
 CREATE TABLE players (id serial PRIMARY KEY, name varchar(255) NOT NULL);
 
 
-DROP TABLE IF EXISTS MATCH CASCADE;
 
 
 CREATE TABLE MATCH (id serial PRIMARY KEY,
